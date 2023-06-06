@@ -7,8 +7,8 @@
   "scripts": {
     "jobs1": "nodemon ./home_jobs/jobs1.js",
     "jobs": "nodemon ./jobs/jobs.js",
+    "if": "nodemon ./js/08-if.js",
     "array": "nodemon ./js/07-array.js",
-    "function": "nodemon ./js/06-function.js",
     "server": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

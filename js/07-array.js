@@ -14,9 +14,13 @@ let abc4 = ["Vaidas","Birute","Paskutinis"];
 let abc5 = abc4.length -1;
 console.log(abc4[abc5]);
 
+
+
 function arr(s1,s2) {
-return "\n"+s1[0]+" "+s1[1]+" "+(2023-s1[2]);
-//return `\n${w1[0]}.${w2} age ${2023-n1}`;
+return "\n"+s1[0]+" "+s1[1]+" age "+(2023-s1[2])+
+"\n"+s2[0]+" "+s2[1]+" age "+(2023-s2[2]);
+//return `\n${s1[0]} ${s1[1]} age ${2023-s1[2]}`
+//`\n${s2[0]} ${s2[1]} age ${2023-s2[2]}`;
 }
 let arr1 = ["Pamela","Anderson",1970];
 let arr2 = ["Angelina","Jolie",1980];

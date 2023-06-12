@@ -14,7 +14,9 @@ let abc4 = ["Vaidas","Birute","Paskutinis"];
 let abc5 = abc4.length -1;
 console.log(abc4[abc5]);
 
-
+let arr21 = ["Pamela","Angelina","Samantha"];
+let num1 = arr21.length;
+console.log("All people:",num1,"Last human:",arr21[num1-1]);
 
 function arr(s1,s2) {
 return "\n"+s1[0]+" "+s1[1]+" age "+(2023-s1[2])+

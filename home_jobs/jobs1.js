@@ -1,3 +1,5 @@
+console.clear();
+
 //Jonas: paskutinis pažimys yra 8.
 //Maryte: paskutinis pažimys yra 8.
 //Petras: paskutinis pažimys yra 7.

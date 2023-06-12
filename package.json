@@ -14,6 +14,7 @@
     "for": "nodemon ./js/09-for.js",
     "if": "nodemon ./js/08-if.js",
     "array": "nodemon ./js/07-array.js",
+    "console": "nodemon ./js/01-console.js",
     "server": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

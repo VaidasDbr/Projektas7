@@ -193,17 +193,27 @@ function isrinktiRaides(a,b) {
         return "Pirmasis kintamasis netinkamo dydžio, antrasis kintamasis netinkamo tipo.";
         }
     }
-    if (a.length <= 0 || a.length >= 100) {
+    if (a.length === 0 || a.length >= 100) {
         return "Pirmojo kintamojo reikšmė yra netinkamo dydžio.";
     }
     if (typeof b !== "number" || !isFinite(b)) {
         return "Antrasis kintamasis yra netinkamo tipo.";
     }
-    if (b <= 0) {
+    if (b === 0) {
         return "Antrasis kintamasis turi būti didesnis už nulį.";
     }
     if (b > a.length) {
         return "Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.";
+    }
+    if (b % 1 !== 0) {
+       return "Antrasis kintamasis turi būti sveikas skaičius.";
+    }
+    if (b < 0) {
+        let str = "";
+        for (let i=a.length + b; i > -1; i += b) {
+            str = str+a[i];
+        }
+        return str;  
     }
     let str="";
     for (let i=b-1; i<a.length; i += b) {
@@ -213,11 +223,14 @@ function isrinktiRaides(a,b) {
 }
 console.log( isrinktiRaides( "abcdefg" , 2 ) );
 console.log( isrinktiRaides( "abcdefghijkl" , 3 ) );
+console.log( isrinktiRaides( "abcdefghijkl" , -3 ) );
+console.log( isrinktiRaides( "abcdefghijkl" , -5 ) );
 console.log( isrinktiRaides( "abc" , 0 ) );
 console.log( isrinktiRaides( "abc" , 4 ) );
 console.log( isrinktiRaides( 1561 , 2 ) );
 //Bonus stage
 console.log( isrinktiRaides( "" , 1 ) );
+console.log( isrinktiRaides( "abcdef" , 3.14 ) );
 //Experience
 console.log( isrinktiRaides( [ "abc" , 1 ] ) );
 console.log( isrinktiRaides( Infinity , Infinity ));

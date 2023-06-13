@@ -156,23 +156,32 @@ console.log( ste( 0 , 100 ));
 console.log( ste( 574 , 815 ));
 console.log( ste( -50 , 50 ));
 console.log( ste( -70 , 30 ));
-//bugs
-let str1 = ["a","b","c","d","e","f"];
-for (let ii=5; ii>-1 ; ii--) {
-    console.log(str1[ii]);
-}
 
-let str2 = [0,11,8,31,-18,18]
-for (let i=0; i<=4 ; i += 2) {
-    for (let i3=3; i3<=7 ; i3 += 2) {
-        let iii = 0;
-            for (let ii=str2[i]; ii<=str2[i+1]; ii=ii+i3) {
-                iii++
+
+let str1 = "abcdef";
+let str12 = "";
+for (let i=str1.length -1; i > -1 ; i--) {
+    str12 = str12 + str1[i];
+}
+console.log(str12);
+
+
+function int(a,b) {
+    for (let i2 = 3; i2 < 8; i2 += 2) {
+        let num = 0;
+        for (let i = a; i <= b; i++) {
+            if (i / i2 % 1 === 0) {
+                num++;
             }
-        console.log("Skaičių intervale tarp "+str2[i]+" ir "+str2[i+1]+", besidalijančių be liekanos iš "+i3+" yra "+iii+" vienetai.");
+        }
+        console.log("Skaičių intervale tarp "+a+" ir "+b+", besidalijančių be liekanos iš "+i2+" yra "+num+" vienetai.");
     }
+    return "";
 }
-
+console.log( int( 0 , 11 ));
+console.log( int( 8 , 31 ));
+console.log( int( -18 , 18 ));
+//bugs
 
 let masyvas1 = [1,1,1];
 let masyvas2 = [1,2,2,3];

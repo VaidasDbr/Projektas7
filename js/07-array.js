@@ -18,6 +18,12 @@ let arr21 = ["Pamela","Angelina","Samantha"];
 let num1 = arr21.length;
 console.log("All people:",num1,"Last human:",arr21[num1-1]);
 
+let a = ["Pamela","Angelina","Samantha"];
+console.log("All people:",a.length,"Last human:",a[a.length-1]);
+
+let b = ["Pamela","Angelina","Samantha"];
+console.log("All people:",b.at(),"Last human:",a.at(-1));
+
 function arr(s1,s2) {
 return "\n"+s1[0]+" "+s1[1]+" age "+(2023-s1[2])+
 "\n"+s2[0]+" "+s2[1]+" age "+(2023-s2[2]);
@@ -26,5 +32,4 @@ return "\n"+s1[0]+" "+s1[1]+" age "+(2023-s1[2])+
 }
 let arr1 = ["Pamela","Anderson",1970];
 let arr2 = ["Angelina","Jolie",1980];
-let arr3 = arr(arr1,arr2);
-console.log(arr3);
+console.log(arr(arr1,arr2));

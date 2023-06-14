@@ -26,6 +26,7 @@ console.clear();
 //ar jie nelygūs
 //kuris didesnis arba lygus
 //kuris mažesnis arba lygus
+
 let num1 = 1; let num2 = 2;
 if (num1 > num2) {
     console.log("Pomidoras");
@@ -181,101 +182,44 @@ function int(a,b) {
 console.log( int( 0 , 11 ));
 console.log( int( 8 , 31 ));
 console.log( int( -18 , 18 ));
-//bugs
 
+//Experience
+
+function num(a,b,c,d) {
+    for (let ii=1; ii<6; ii++) {
+        let nm1 = 0;
+        let nm2 = 0;
+        let nm3 = 0;
+        let nm4 = 0;
+        for (let i=0; i<a.length; i++) {
+            if (a[i] === ii) {
+                nm1++;
+            }
+        }
+        for (let i=0; i<b.length; i++) {
+            if (b[i] === ii) {
+                nm2++;
+            }
+        }
+        for (let i=0; i<c.length; i++) {
+            if (c[i] === ii) {
+                nm3++;
+            }
+        }
+        for (let i=0; i<d.length; i++) {
+            if (d[i] === ii) {
+                nm4++;
+            }
+        }
+        console.log("(masyvas1) "+ii+" yra "+nm1+
+        " (masyvas2) "+ii+" yra "+nm2+
+        " (masyvas3) "+ii+" yra "+nm3+
+        " (masyvas4) "+ii+" yra "+nm4);
+    }
+    return "";
+}
 let masyvas1 = [1,1,1];
 let masyvas2 = [1,2,2,3];
 let masyvas3 = [5,4,3,2,1];
 let masyvas4 = [5,4,3,2,1,1,1,1,1,2,2,3];
-let num11=0;let num22=0;let num33=0;let num44=0;let num55=0;
-for (let i7=0; i7<masyvas1.length; i7++) {
-    if (masyvas1[i7] === 1) {
-        num11++;
-    }
-    if (masyvas1[i7] === 2) {
-        num22++;
-    }
-    if (masyvas1[i7] === 3) {
-        num33++;
-    }
-    if (masyvas1[i7] === 4) {
-        num44++;
-    }
-    if (masyvas1[i7] === 5) {
-        num55++;
-    }
-}
-console.log("masyvas1 turi 1 = "+num11);
-console.log("masyvas1 turi 2 = "+num22);
-console.log("masyvas1 turi 3 = "+num33);
-console.log("masyvas1 turi 4 = "+num44);
-console.log("masyvas1 turi 5 = "+num55);
-num11=0;num22=0;num33=0;num44=0;num55=0;
-for (let i7=0; i7<masyvas2.length; i7++) {
-    if (masyvas2[i7] === 1) {
-        num11++;
-    }
-    if (masyvas2[i7] === 2) {
-        num22++;
-    }
-    if (masyvas2[i7] === 3) {
-        num33++;
-    }
-    if (masyvas2[i7] === 4) {
-        num44++;
-    }
-    if (masyvas2[i7] === 5) {
-        num55++;
-    }
-}
-console.log("masyvas2 turi 1 = "+num11);
-console.log("masyvas2 turi 2 = "+num22);
-console.log("masyvas2 turi 3 = "+num33);
-console.log("masyvas2 turi 4 = "+num44);
-console.log("masyvas2 turi 5 = "+num55);
-num11=0;num22=0;num33=0;num44=0;num55=0;
-for (let i7=0; i7<masyvas3.length; i7++) {
-    if (masyvas3[i7] === 1) {
-    num11++;
-    }
-    if (masyvas3[i7] === 2) {
-        num22++;
-    }
-    if (masyvas3[i7] === 3) {
-        num33++;
-    }
-    if (masyvas3[i7] === 4) {
-        num44++;
-    }
-    if (masyvas3[i7] === 5) {
-        num55++;
-    }
-}
-console.log("masyvas3 turi 1 = "+num11);
-console.log("masyvas3 turi 2 = "+num22);
-console.log("masyvas3 turi 3 = "+num33);
-console.log("masyvas3 turi 4 = "+num44);
-console.log("masyvas3 turi 5 = "+num55);
-num11=0;num22=0;num33=0;num44=0;num55=0;
-for (let i7=0; i7<masyvas4.length; i7++) {
-    if (masyvas4[i7] === 1) {
-        num11++;
-    }
-    if (masyvas4[i7] === 2) {
-        num22++;
-    }
-    if (masyvas4[i7] === 3) {
-        num33++;
-    }
-    if (masyvas4[i7] === 4) {
-        num44++;
-    }
-    if (masyvas4[i7] === 5) {
-        num55++;
-    }
-}
-console.log("masyvas4 turi 1 = "+num11);
-console.log("masyvas4 turi 2 = "+num22);
-console.log("masyvas4 turi 3 = "+num33);
-console.log("masyvas4 turi 4 = "+num44);
-console.log("masyvas4 turi 5 = "+num55);
+console.log(num(masyvas1,masyvas2,masyvas3,masyvas4));
